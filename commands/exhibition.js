@@ -48,8 +48,8 @@ export default async (event) => {
         bubble.body.contents[2].contents[1].contents[1].text = endDate
         bubble.body.contents[2].contents[2].contents[1].text = address
 
-        bubble.footer.contents[1].action.uri = url
-        bubble.footer.contents[2].action.uri = googleMapUrl
+        bubble.footer.contents[0].action.uri = url
+        bubble.footer.contents[1].action.uri = googleMapUrl
 
         return bubble
       })
