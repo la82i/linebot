@@ -1,6 +1,6 @@
 import 'dotenv/config'
 import linebot from 'linebot'
-import commandExhibition from './commands/exhibition'
+import commandExhibition from './commands/exhibition.js'
 
 const bot = linebot({
   channelId: process.env.CHANNEL_ID,
