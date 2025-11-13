@@ -38,8 +38,6 @@ export default async (event) => {
         const picUrl = value.ImageFile || 'https://placehold.co/600x400?text=No+Image'
         //免費、售票
         const charge = value.TicketType
-        // 有些資料沒有電話，需要用其他文字替代
-        const tel = value.contactTel
 
         // 將資料帶入 Flex 卡片模板
         const bubble = JSON.parse(JSON.stringify(template))
@@ -50,7 +48,6 @@ export default async (event) => {
         bubble.body.contents[2].contents[1].contents[1].text = endDate
         bubble.body.contents[2].contents[2].contents[1].text = address
 
-        bubble.footer.contents[0].action.uri = tel
         bubble.footer.contents[1].action.uri = url
         bubble.footer.contents[2].action.uri = googleMapUrl
 

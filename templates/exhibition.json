@@ -127,16 +127,6 @@
         "height": "sm",
         "action": {
           "type": "uri",
-          "label": "CALL",
-          "uri": "tel:0212345678"
-        }
-      },
-      {
-        "type": "button",
-        "style": "link",
-        "height": "sm",
-        "action": {
-          "type": "uri",
           "label": "WEBSITE",
           "uri": "https://line.me/"
         }
