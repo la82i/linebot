@@ -24,7 +24,8 @@ export default async (event) => {
       // 組成卡片
       .map((value) => {
         // 類型、名稱
-        const title = `類別: ${value.Category}+名稱: ${value.Caption}`
+        const type = `${value.Category}`
+        const title = `${value.Caption}`
         // 時間
         const startDate = `開始${value.StartDate}`
         const endDate = `結束${value.EndDate}`
@@ -42,7 +43,8 @@ export default async (event) => {
         // 將資料帶入 Flex 卡片模板
         const bubble = JSON.parse(JSON.stringify(template))
         bubble.hero.url = picUrl
-        bubble.body.contents[0].text = title
+        bubble.body.contents[0].text = type
+        bubble.body.contents[1].text = title
         bubble.body.contents[1].contents[1].text = charge
         bubble.body.contents[2].contents[0].contents[1].text = startDate
         bubble.body.contents[2].contents[1].contents[1].text = endDate

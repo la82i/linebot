@@ -17,6 +17,12 @@
     "contents": [
       {
         "type": "text",
+        "text": "展覽",
+        "weight": "bold",
+        "size": "md"
+      },
+      {
+        "type": "text",
         "text": "Brown Cafe",
         "weight": "bold",
         "size": "xl"
