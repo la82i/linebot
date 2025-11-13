@@ -45,10 +45,10 @@ export default async (event) => {
         bubble.hero.url = picUrl
         bubble.body.contents[0].text = type
         bubble.body.contents[1].text = title
-        bubble.body.contents[1].contents[1].text = charge
-        bubble.body.contents[2].contents[0].contents[1].text = startDate
-        bubble.body.contents[2].contents[1].contents[1].text = endDate
-        bubble.body.contents[2].contents[2].contents[1].text = address
+        bubble.body.contents[2].contents[1].text = charge
+        bubble.body.contents[3].contents[0].contents[1].text = startDate
+        bubble.body.contents[3].contents[1].contents[1].text = endDate
+        bubble.body.contents[3].contents[2].contents[1].text = address
 
         bubble.footer.contents[0].action.uri = url
         bubble.footer.contents[1].action.uri = googleMapUrl
