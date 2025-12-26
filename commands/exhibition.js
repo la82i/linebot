@@ -4,6 +4,10 @@ import template from '../templates/exhibition.json' with { type: 'json' }
 
 export default async (event) => {
   try {
+    // 如果是位置訊息，使用使用者的座標；如果是文字訊息，使用預設座標 (例如台北市政府)
+    const lat = event.message.type === 'location' ? event.message.latitude : 25.03746
+    const lon = event.message.type === 'location' ? event.message.longitude : 121.564558
+
     const { data } = await axios.get('https://cultureexpress.taipei/OpenData/Event/C000003')
     const bubbles = data
       .map((value) => {
@@ -12,6 +16,8 @@ export default async (event) => {
           value.Longitude,
           event.message.latitude,
           event.message.longitude,
+          lat,
+          lon,
           'K',
         )
         return value

@@ -10,11 +10,15 @@ const bot = linebot({
 })
 bot.on('message', async (event) => {
   if (event.message.type === 'location') {
-    // 處理地理位置訊息
     commandExhibition(event)
   } else if (event.message.type === 'text') {
     const prompt = event.message.text.trim()
     
+    if (prompt === '查詢展覽') {
+      commandExhibition(event)
+      return
+    }
+
     if (prompt.length === 0) {
       return
     }
