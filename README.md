@@ -19,7 +19,7 @@
 ## 🚀 如何開始使用
 
 1. 加入此 LINE Bot 好友
-<img src="./assets/qrcode.png" width="200" />
+<img src="./assets/qrcode.PNG" width="200" />
 2. 點擊聊天室左下角的 `+` 號，選擇 **「位置資訊」** 並傳送。
 <img src="./assets/01.png" width="250" />
 <img src="./assets/02.png" width="250" />
