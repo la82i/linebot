@@ -21,10 +21,10 @@
 1. 加入此 LINE Bot 好友
 <img src="./assets/qrcode.PNG" width="200" />
 2. 點擊聊天室左下角的 `+` 號，選擇 **「位置資訊」** 並傳送。
-<img src="./assets/01.png" width="250" />
 <img src="./assets/02.png" width="250" />
-3. 或者直接在圖文選單點擊 **「查詢展覽」**。
 <img src="./assets/03.png" width="250" />
+3. 或者直接在圖文選單點擊 **「查詢展覽」**。
+<img src="./assets/01.png" width="250" />
 ---
 
 ## 資料來源
