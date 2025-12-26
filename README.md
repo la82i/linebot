@@ -19,12 +19,12 @@
 ## 🚀 如何開始使用
 
 1. 加入此 LINE Bot 好友
-![QRcode](./assets/qrcode.PNG)
+<img src="./assets/qrcode.png" width="200" />
 2. 點擊聊天室左下角的 `+` 號，選擇 **「位置資訊」** 並傳送。
-![](./assets/01.png)
-![](./assets/02.png) 
+<img src="./assets/01.png" width="250" />
+<img src="./assets/02.png" width="250" />
 3. 或者直接在圖文選單點擊 **「查詢展覽」**。
-![](./assets/03.png) 
+<img src="./assets/03.png" width="250" />
 ---
 
 ## 資料來源
